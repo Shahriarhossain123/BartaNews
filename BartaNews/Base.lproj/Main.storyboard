@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VpK-Xx-WVa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Barta-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BartaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMw-4J-GVG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="340" id="OYP-uN-EKI" customClass="NewsCell" customModule="BartaNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="340"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OYP-uN-EKI" id="NKZ-jZ-c0q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="340"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-OM-H2T">
+                                                    <rect key="frame" x="16" y="10" width="382" height="314"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="i7x-oM-vRb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="162"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-Xm-oHK">
+                                                            <rect key="frame" x="8" y="170" width="366" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </string>
+                                                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="December 14th, 2008 4:35 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQx-DG-YQR">
+                                                            <rect key="frame" x="8" y="278" width="358" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ContentAllView" destination="6Cb-OM-H2T" id="ycy-rE-OPZ"/>
+                                            <outlet property="NewsDate" destination="EQx-DG-YQR" id="oKp-yt-q1H"/>
+                                            <outlet property="NewsImage" destination="i7x-oM-vRb" id="oja-Yc-VWl"/>
+                                            <outlet property="NewsTitle" destination="7cS-Xm-oHK" id="EOO-lt-WJk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="33F-6F-ggK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SoR-8F-JLQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cMw-4J-GVG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WiP-cx-Fq9"/>
+                            <constraint firstItem="cMw-4J-GVG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bvi-Vr-ewe"/>
+                            <constraint firstItem="cMw-4J-GVG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nss-bR-qk1"/>
+                            <constraint firstItem="cMw-4J-GVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rrD-tx-OWW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="doc.append" catalog="system" id="Cm1-Q9-e5c"/>
+                    <navigationItem key="navigationItem" title="Barta" id="wcd-e4-9CC"/>
+                    <connections>
+                        <outlet property="newssTable" destination="cMw-4J-GVG" id="Hxu-zZ-cMj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="96.428571428571431"/>
+        </scene>
+        <!--Show News-->
+        <scene sceneID="AfQ-UR-wHM">
+            <objects>
+                <viewController storyboardIdentifier="ShowNews" id="bWA-Q8-QWv" customClass="ShowNews" customModule="BartaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zxA-g7-Q2w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dO-TS-9Gn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECW-3P-7Q1">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="970"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="cAF-o4-s9F">
+                                                <rect key="frame" x="-1" y="0.0" width="415" height="300"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcN-gX-K44">
+                                                <rect key="frame" x="20" y="308" width="374" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYC-Ik-FEc">
+                                                <rect key="frame" x="20" y="416" width="374" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="December 14th, 2008 4:35 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIE-by-MLT">
+                                                <rect key="frame" x="20" y="439" width="365" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6IV-48-MbT">
+                                                <rect key="frame" x="20" y="462" width="374" height="488"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cAF-o4-s9F" secondAttribute="trailing" id="Qsq-2m-0Gn"/>
+                                            <constraint firstItem="cAF-o4-s9F" firstAttribute="top" secondItem="ECW-3P-7Q1" secondAttribute="top" id="hVq-zI-BbW"/>
+                                            <constraint firstItem="cAF-o4-s9F" firstAttribute="leading" secondItem="ECW-3P-7Q1" secondAttribute="leading" constant="-1" id="uJd-wc-Tmw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ECW-3P-7Q1" firstAttribute="centerX" secondItem="6dO-TS-9Gn" secondAttribute="centerX" id="4HR-P8-z6a"/>
+                                    <constraint firstItem="ZpY-K8-0nY" firstAttribute="bottom" secondItem="ECW-3P-7Q1" secondAttribute="bottom" constant="22" id="5cE-aC-HK1"/>
+                                    <constraint firstItem="ECW-3P-7Q1" firstAttribute="top" secondItem="TuW-ZB-Xjl" secondAttribute="bottom" constant="8" symbolic="YES" id="6BP-qH-OfL"/>
+                                    <constraint firstItem="ECW-3P-7Q1" firstAttribute="top" secondItem="ZpY-K8-0nY" secondAttribute="top" constant="8" id="DRo-MA-V7q"/>
+                                    <constraint firstItem="ECW-3P-7Q1" firstAttribute="leading" secondItem="6dO-TS-9Gn" secondAttribute="leading" id="cGg-iL-Bna"/>
+                                    <constraint firstAttribute="trailing" secondItem="ECW-3P-7Q1" secondAttribute="trailing" id="rE0-1h-ko3"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="TuW-ZB-Xjl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ZpY-K8-0nY"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6dO-TS-9Gn" firstAttribute="top" secondItem="zxA-g7-Q2w" secondAttribute="top" id="2xI-Yx-JkF"/>
+                            <constraint firstAttribute="trailing" secondItem="6dO-TS-9Gn" secondAttribute="trailing" id="9K6-vu-PzF"/>
+                            <constraint firstAttribute="bottom" secondItem="6dO-TS-9Gn" secondAttribute="bottom" id="F2c-Ti-kDa"/>
+                            <constraint firstItem="6dO-TS-9Gn" firstAttribute="leading" secondItem="zxA-g7-Q2w" secondAttribute="leading" id="Vk0-4X-oD9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="blI-4F-JNu"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="GetArticlas" destination="NYC-Ik-FEc" id="s71-D6-asU"/>
+                        <outlet property="getConten" destination="6IV-48-MbT" id="OjF-bk-mpy"/>
+                        <outlet property="getDate" destination="FIE-by-MLT" id="PmH-zk-QGa"/>
+                        <outlet property="getPhoto" destination="cAF-o4-s9F" id="8W0-Cw-0Cd"/>
+                        <outlet property="getTitle" destination="OcN-gX-K44" id="r46-0W-dLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObS-cA-whq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2939.130434782609" y="96.428571428571431"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="qYM-s3-4lr">
+            <objects>
+                <viewController id="aIc-2k-4Ip" customClass="PhotosVC" customModule="BartaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3VZ-cW-PtP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9TQ-Jr-JiG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="de6-fL-Zsq">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pcell" id="Pg9-Er-T3h" customClass="PhotoViewCell" customModule="BartaNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5zP-yy-hIe">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="SPd-Dp-IDx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="4Ev-sg-Vdu"/>
+                                                        <constraint firstAttribute="height" constant="130" id="RZu-Z3-x8U"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SPd-Dp-IDx" firstAttribute="leading" secondItem="5zP-yy-hIe" secondAttribute="leading" id="2ib-zi-x45"/>
+                                                <constraint firstAttribute="trailing" secondItem="SPd-Dp-IDx" secondAttribute="trailing" id="BoE-g3-B3d"/>
+                                                <constraint firstAttribute="bottom" secondItem="SPd-Dp-IDx" secondAttribute="bottom" id="M8I-Jl-xd1"/>
+                                                <constraint firstItem="SPd-Dp-IDx" firstAttribute="top" secondItem="5zP-yy-hIe" secondAttribute="top" id="yCh-E6-T8q"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="130" height="130"/>
+                                        <connections>
+                                            <outlet property="ShowPhotos" destination="SPd-Dp-IDx" id="xEh-VQ-6UZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="aIc-2k-4Ip" id="5Sc-Is-jx2"/>
+                                    <outlet property="delegate" destination="aIc-2k-4Ip" id="vFu-gk-235"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9TQ-Jr-JiG" firstAttribute="top" secondItem="yJe-4v-CUw" secondAttribute="top" id="DaQ-JP-Kvg"/>
+                            <constraint firstItem="9TQ-Jr-JiG" firstAttribute="trailing" secondItem="yJe-4v-CUw" secondAttribute="trailing" id="Qj1-XN-Zk0"/>
+                            <constraint firstItem="9TQ-Jr-JiG" firstAttribute="bottom" secondItem="yJe-4v-CUw" secondAttribute="bottom" id="k3m-s5-TBf"/>
+                            <constraint firstItem="9TQ-Jr-JiG" firstAttribute="leading" secondItem="yJe-4v-CUw" secondAttribute="leading" id="yjc-zj-7ph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yJe-4v-CUw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photo" image="photo" catalog="system" id="JCW-i3-RdR"/>
+                    <connections>
+                        <outlet property="PhotoCollection" destination="9TQ-Jr-JiG" id="D6n-Sx-i1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Uq-Yk-H29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="881.91964285714278"/>
+        </scene>
+        <!--In APP Purchase-->
+        <scene sceneID="8aT-ja-4rB">
+            <objects>
+                <viewController id="iFr-1R-4Ta" customClass="InAppVC" customModule="BartaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hos-AW-EEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In App Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rU-Sn-ubm">
+                                <rect key="frame" x="43" y="424" width="329" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hkj-Pu-umc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="In APP Purchase" image="creditcard" catalog="system" id="zEz-b8-tTO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpd-Cu-c8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="-1301"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="K0F-XW-p3i">
+            <objects>
+                <viewController id="ZwU-cG-zAE" customClass="VideosVC" customModule="BartaNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3yA-Yd-Kix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P6M-xP-i5W">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZwU-cG-zAE" id="ONK-1X-lOc"/>
+                                    <outlet property="delegate" destination="ZwU-cG-zAE" id="fKq-0c-UTF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P6M-xP-i5W" firstAttribute="leading" secondItem="rkZ-YL-cwG" secondAttribute="leading" id="9zF-Z4-NGp"/>
+                            <constraint firstItem="P6M-xP-i5W" firstAttribute="top" secondItem="rkZ-YL-cwG" secondAttribute="top" id="HfQ-1Q-ZHs"/>
+                            <constraint firstItem="P6M-xP-i5W" firstAttribute="trailing" secondItem="rkZ-YL-cwG" secondAttribute="trailing" id="JiP-Rg-PeN"/>
+                            <constraint firstItem="P6M-xP-i5W" firstAttribute="bottom" secondItem="rkZ-YL-cwG" secondAttribute="bottom" id="iv6-yQ-bK0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rkZ-YL-cwG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video" image="tv" catalog="system" id="g0m-dH-SZa"/>
+                    <connections>
+                        <outlet property="videoSho" destination="P6M-xP-i5W" id="LAq-E7-o4s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgX-EL-nxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="-646.20535714285711"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="yKp-nU-pMj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VpK-Xx-WVa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UAp-r2-22j"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RfJ-rW-9ky">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AGA-Qp-2EF" kind="relationship" relationship="rootViewController" id="wGe-a6-4nP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOU-XL-Gyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="97"/>
+        </scene>
+        <!--Barta-->
+        <scene sceneID="qJJ-Fb-kHx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AGA-Qp-2EF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Barta" id="Kuk-t1-oVl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oTJ-6u-9LS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.46274509800000002" green="0.078431372550000003" blue="0.68235294120000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c6i-ov-z0P"/>
+                        <segue destination="aIc-2k-4Ip" kind="relationship" relationship="viewControllers" id="vSx-3n-2i4"/>
+                        <segue destination="ZwU-cG-zAE" kind="relationship" relationship="viewControllers" id="BP8-29-pDt"/>
+                        <segue destination="iFr-1R-4Ta" kind="relationship" relationship="viewControllers" id="vXl-dy-0zE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyS-sG-lJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="creditcard" catalog="system" width="64" height="44"/>
+        <image name="doc.append" catalog="system" width="56" height="64"/>
+        <image name="noimage" width="512" height="512"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
+        <image name="tv" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
